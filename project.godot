@@ -21,7 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="PixleBox"
-run/main_scene="res://Scene/World.tscn"
+run/main_scene="res://Scene/Player.tscn"
 config/icon="res://icon.png"
 
 [display]

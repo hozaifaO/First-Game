@@ -1,9 +1,11 @@
 extends Actor
-
+var direction = 1.0
 func _ready():
-	velocity.x = -SPEED
+	pass
 
 func _physics_process(delta):
+	velocity.x = -SPEED * direction
+	velocity = move_and_slide(velocity,FLOOR_NORMAL)
+	
 	if is_on_wall():
-		velocity.x *= -1.0
-	velocity.y = move_and_slide(velocity,FLOOR_NORMAL).y
+		direction = direction * -1.0

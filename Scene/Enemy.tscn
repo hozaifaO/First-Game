@@ -3,11 +3,11 @@
 [ext_resource path="res://src/Enemy.gd" type="Script" id=1]
 [ext_resource path="res://Assets/enemy.png" type="Texture" id=2]
 
-[sub_resource type="CircleShape2D" id=1]
-radius = 48.8454
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 50.6785, 48.5084 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 24.5307, 5.3476 )
+extents = Vector2( 25.3705, 5.70743 )
 
 [node name="Enemy" type="Node2D"]
 __meta__ = {
@@ -38,16 +38,12 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy"]
-position = Vector2( 0, -36 )
+position = Vector2( 0.5998, -34.0507 )
 scale = Vector2( 0.8, 0.720001 )
 shape = SubResource( 1 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="Stop Detector" type="Area2D" parent="Enemy"]
-editor/display_folded = true
-position = Vector2( -0.558628, -71.9158 )
+position = Vector2( -0.40868, -65.9178 )
 monitorable = false
 collision_layer = 0
 

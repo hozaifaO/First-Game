@@ -1,7 +1,7 @@
 extends Actor
 func _ready():
 	set_physics_process(false)
-	velocity.x = -SPEED 
+	velocity.x = -(SPEED *0.85)
 	
 func _on_Stop_Detector_body_entered(body):
 	

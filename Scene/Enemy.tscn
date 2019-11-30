@@ -4,10 +4,10 @@
 [ext_resource path="res://Assets/enemy.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 50.6785, 48.5084 )
+extents = Vector2( 49.7413, 39.5529 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 25.3705, 5.70743 )
+extents = Vector2( 40.6654, 6.60713 )
 
 [node name="Enemy" type="Node2D"]
 __meta__ = {
@@ -38,12 +38,12 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy"]
-position = Vector2( 0.5998, -34.0507 )
+position = Vector2( -1.19209e-07, -30.152 )
 scale = Vector2( 0.8, 0.720001 )
 shape = SubResource( 1 )
 
 [node name="Stop Detector" type="Area2D" parent="Enemy"]
-position = Vector2( -0.40868, -65.9178 )
+position = Vector2( -0.558628, -65.168 )
 collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy/Stop Detector"]

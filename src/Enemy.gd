@@ -7,6 +7,7 @@ func _on_Stop_Detector_body_entered(body):
 	
 	if body.global_position.y > get_node("Stop Detector").global_position.y:
 		return
+	get_node("CollisionShape2D").disabled = true
 	queue_free()
 	
 func _physics_process(delta):

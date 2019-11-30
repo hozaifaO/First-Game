@@ -18,3 +18,6 @@ func input_direction():
 func jump(velocity_l:Vector2):
 	velocity.y -= jump_impulse
 	
+
+func _on_EnemyDetector_area_entered(area):
+	pass # Replace with function body.

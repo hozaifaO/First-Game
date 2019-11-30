@@ -44,8 +44,7 @@ shape = SubResource( 1 )
 
 [node name="Stop Detector" type="Area2D" parent="Enemy"]
 position = Vector2( -0.40868, -65.9178 )
-monitorable = false
-collision_layer = 0
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy/Stop Detector"]
 position = Vector2( 0.286049, 0.09935 )

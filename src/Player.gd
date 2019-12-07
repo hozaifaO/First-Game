@@ -1,5 +1,5 @@
 extends Actor
-export var stomp_impulse = 1000.0
+export var stomp_impulse = 1500.0
 
 func _on_EnemyDetector_area_entered(area):
 	velocity = calculate_stop_velocity(velocity,stomp_impulse)
